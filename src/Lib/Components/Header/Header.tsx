@@ -95,10 +95,10 @@ export const Header = () => {
               transition: "visibility 0.5s, opacity 0.5s linear",
             }}
           >
-            <Link to="/portfolio#home" style={{ color: TEXT_COLOR }}>Home</Link>
-            <Link to="/portfolio#about" style={{ color: TEXT_COLOR }}>About</Link>
-            <Link to="/portfolio#projects" style={{ color: TEXT_COLOR }}>Projects</Link>
-            <Link to="/portfolio#contact" style={{ color: TEXT_COLOR }}>Contact</Link>
+            <Link to="/#home" style={{ color: TEXT_COLOR }}>Home</Link>
+            <Link to="/#about" style={{ color: TEXT_COLOR }}>About</Link>
+            <Link to="/#projects" style={{ color: TEXT_COLOR }}>Projects</Link>
+            <Link to="/#contact" style={{ color: TEXT_COLOR }}>Contact</Link>
 
             <Close
               sx={{
