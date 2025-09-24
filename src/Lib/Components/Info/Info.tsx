@@ -5,6 +5,7 @@ import Langs from "./Langs"
 const Info = () => {
   return (
     <Box
+      id={"info"}
       sx={{
         display: "flex",
         flexDirection: "column",
@@ -18,7 +19,7 @@ const Info = () => {
         variant="h2"
         sx={{
           color: "white",
-          mb: 3
+          mb: 3,
         }}
       >
         Main Project and Languages
@@ -32,7 +33,7 @@ const Info = () => {
           alignItems: "center",
           width: "100%",
           height: "300px",
-          my: 5
+          my: 5,
         }}
       >
         <Chart />

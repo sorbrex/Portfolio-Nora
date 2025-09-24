@@ -1,25 +1,26 @@
-import { Box, IconButton, Typography } from "@mui/material";
-import { Menu, Close } from "@mui/icons-material"
-import useWindowDimensions from "../../Hooks/useDimension";
-import { useMemo, useState } from "react";
-import { TEXT_COLOR } from "../../Styles";
-import { Link } from "react-router-dom";
+import { Box, Typography } from "@mui/material"
+// import { Menu, Close } from "@mui/icons-material"
+// import useWindowDimensions from "../../Hooks/useDimension";
+// import { useMemo, useState } from "react";
+// import { TEXT_COLOR } from "../../Styles";
+// import { Link } from "react-router-dom";
 
 export const Header = () => {
+  // const { width } = useWindowDimensions();
+  // const isMobile = useMemo(() => width < 768, [width])
 
-  const { width } = useWindowDimensions();
-  const isMobile = useMemo(() => width < 768, [width])
-
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  // const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
-    <Box sx={{
-      minWidth: "100%",
-      display: "flex",
-      justifyContent: "space-between",
-      alignItems: "center",
-      position: "relative",
-    }}>
+    <Box
+      sx={{
+        minWidth: "100%",
+        display: "flex",
+        justifyContent: "space-between",
+        alignItems: "center",
+        position: "relative",
+      }}
+    >
       <Box
         sx={{
           display: "flex",
@@ -35,6 +36,7 @@ export const Header = () => {
       </Box>
 
       {/* Name */}
+      {/* 
       <Box
         sx={{
           display: "flex",
@@ -44,39 +46,60 @@ export const Header = () => {
           visibility: isMobile ? "hidden" : "visible",
         }}
       >
+        <Typography variant="h6">
+          <Link to="/" style={{ color: TEXT_COLOR }}>
+            Home
+          </Link>
+        </Typography>
+        <Typography variant="h6">
+          <Link
+            to={{
+              hash: "#about",
+            }}
+            style={{ color: TEXT_COLOR }}
+          >
+            About
+          </Link>
+        </Typography>
+        <Typography variant="h6">
+          <Link
+            to={{
+              hash: "#info",
+            }}
+            style={{ color: TEXT_COLOR }}
+          >
+            Projects
+          </Link>
+        </Typography>
+        <Typography variant="h6">
+          <Link
+            to={{
+              hash: "#social",
+            }}
+            style={{ color: TEXT_COLOR }}
+          >
+            Contact
+          </Link>
+        </Typography>
 
-        {/* List of Links As Bar */}
-        <Typography variant="h6">
-          <Link to="/portfolio" style={{ color: TEXT_COLOR }}>Home</Link>
-        </Typography>
-        <Typography variant="h6">
-          <Link to="/portfolio#about" style={{ color: TEXT_COLOR }}>About</Link>
-        </Typography>
-        <Typography variant="h6">
-          <Link to="/portfolio#projects" style={{ color: TEXT_COLOR }}>Projects</Link>
-        </Typography>
-        <Typography variant="h6">
-          <Link to="/portfolio#contact" style={{ color: TEXT_COLOR }}>Contact</Link>
-        </Typography>
-
-        {/* Box With Mobile Link */}
         <Box
           sx={{
             mr: 2,
             visibility: isMobile ? "visible" : "hidden",
           }}
         >
-          {/* Hamburger Menu */}
           <IconButton
             size="small"
             sx={{
-              mr: 2
+              mr: 2,
             }}
           >
-            <Menu sx={{ color: TEXT_COLOR }} onClick={() => setIsMenuOpen(true)} />
+            <Menu
+              sx={{ color: TEXT_COLOR }}
+              onClick={() => setIsMenuOpen(true)}
+            />
           </IconButton>
 
-          {/* List of Links As Menu */}
           <Box
             sx={{
               display: "flex",
@@ -95,10 +118,18 @@ export const Header = () => {
               transition: "visibility 0.5s, opacity 0.5s linear",
             }}
           >
-            <Link to="/#home" style={{ color: TEXT_COLOR }}>Home</Link>
-            <Link to="/#about" style={{ color: TEXT_COLOR }}>About</Link>
-            <Link to="/#projects" style={{ color: TEXT_COLOR }}>Projects</Link>
-            <Link to="/#contact" style={{ color: TEXT_COLOR }}>Contact</Link>
+            <Link to="/#home" style={{ color: TEXT_COLOR }}>
+              Home
+            </Link>
+            <Link to="/#about" style={{ color: TEXT_COLOR }}>
+              About
+            </Link>
+            <Link to="/#info" style={{ color: TEXT_COLOR }}>
+              Projects
+            </Link>
+            <Link to="/#social" style={{ color: TEXT_COLOR }}>
+              Contact
+            </Link>
 
             <Close
               sx={{
@@ -109,17 +140,12 @@ export const Header = () => {
               }}
               onClick={() => setIsMenuOpen(false)}
             />
-
           </Box>
         </Box>
-
-      </Box>
-
-
-
+      </Box> 
+      */}
     </Box>
-  );
+  )
 }
 
 export default Header
-

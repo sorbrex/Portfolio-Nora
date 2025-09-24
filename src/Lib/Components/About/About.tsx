@@ -10,6 +10,7 @@ export const About = () => {
 
   return (
     <Box
+      id="about"
       sx={{
         display: "flex",
         flexDirection: isMobile ? "column" : "row",
@@ -28,7 +29,6 @@ export const About = () => {
           width: "70%",
         }}
       >
-
         <Box
           sx={{
             display: "flex",
@@ -52,18 +52,18 @@ export const About = () => {
             height: "100%",
           }}
         >
-
           <Typography variant="h2" sx={{ fontWeight: "bold" }}>
             Translator
           </Typography>
         </Box>
 
-
         <Typography variant="h6">
-          I am Eleonora Sapienza, an Audiovisual Translator.
-          My interest in Audiovisual Translation began at the end of my university career.
-          Since then, I have been trying to specialise in the art of translation and subtitling,
-          so that I can contribute to the break down of linguistic and cultural barriers overlapped between the medias and our society.
+          I am Eleonora Sapienza, an Audiovisual Translator. My interest in
+          Audiovisual Translation began at the end of my university career.
+          Since then, I have been trying to specialise in the art of translation
+          and subtitling, so that I can contribute to the break down of
+          linguistic and cultural barriers overlapped between the medias and our
+          society.
         </Typography>
       </Box>
 

@@ -5,6 +5,7 @@ import { TEXT_COLOR } from "../../Styles"
 const Social = () => {
   return (
     <Box
+      id="social"
       sx={{
         display: "flex",
         justifyContent: "space-around",
@@ -14,9 +15,30 @@ const Social = () => {
         backgroundColor: "black",
       }}
     >
-      <Instagram fontSize="large" sx={{ color: TEXT_COLOR }} />
-      <LinkedIn fontSize="large" sx={{ color: TEXT_COLOR }} />
-      <Mail fontSize="large" sx={{ color: TEXT_COLOR }} />
+      <Instagram
+        fontSize="large"
+        sx={{ color: TEXT_COLOR, cursor: "pointer" }}
+        onClick={() =>
+          window.open("https://www.instagram.com/imcallednorah_/", "_blank")
+        }
+      />
+      <LinkedIn
+        fontSize="large"
+        sx={{ color: TEXT_COLOR, cursor: "pointer" }}
+        onClick={() =>
+          window.open(
+            "https://www.linkedin.com/in/eleonora-sapienza-9286962a9/",
+            "_blank"
+          )
+        }
+      />
+      <Mail
+        fontSize="large"
+        sx={{ color: TEXT_COLOR, cursor: "pointer" }}
+        onClick={() =>
+          window.open("mailto:eleonora.sapienza@outlook.it", "_blank")
+        }
+      />
     </Box>
   )
 }

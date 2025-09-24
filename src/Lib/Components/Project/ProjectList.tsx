@@ -12,14 +12,14 @@ const ProjectList = (props: ProjectListProps) => {
         justifyContent: "flex-start",
         alignItems: "center",
         minWidth: "100%",
-        my: 15
+        my: 10,
       }}
     >
       <Typography
         variant="h2"
         sx={{
           color: "white",
-          mb: 3
+          mb: 3,
         }}
       >
         {title}
@@ -34,12 +34,14 @@ const ProjectList = (props: ProjectListProps) => {
           alignItems: "center",
           minWidth: "100%",
           gap: 3,
-          mt: 3
+          mt: 3,
         }}
       >
-        {Projects.find(project => project.name === content)?.sourcesArray.map((imageSource: any, index: number) => (
-          <ProjectListCard key={index} imageSource={imageSource} />
-        ))}
+        {Projects.find((project) => project.name === content)?.sourcesArray.map(
+          (imageSource: any, index: number) => (
+            <ProjectListCard key={index} imageSource={imageSource} />
+          )
+        )}
       </Box>
     </Box>
   )

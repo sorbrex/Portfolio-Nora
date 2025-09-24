@@ -26,15 +26,16 @@ function App() {
       <Info />
 
       {/* <ProjectList title="Localization" content={'Localization'} /> */}
-      <ProjectList title="Review" content={'Review'} />
-      <ProjectList title="Subtitling" content={'Subtitling'} />
-      <ProjectList title="Audiodescription" content={'Audiodescription'} />
-      <ProjectList title="SDH Subtitling" content={'SDH Subtitling'} />
-      <ProjectList title="Translation" content={'Translation'} />
+      <ProjectList title="Review" content={"Review"} />
+      <ProjectList title="Subtitling" content={"Subtitling"} />
+      <ProjectList title="Audiodescription" content={"Audiodescription"} />
+      <ProjectList title="SDH Subtitling" content={"SDH Subtitling"} />
+      <ProjectList title="Dialogue List" content={"DialogueList"} />
+      <ProjectList title="Translation" content={"Translation"} />
+      <ProjectList title="Tools" content={"Tools"} />
+      <ProjectList title="Certifications" content={"Certs"} />
 
       <Social />
-
-
     </Box>
   )
 }
